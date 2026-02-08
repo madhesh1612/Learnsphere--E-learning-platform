@@ -1,0 +1,291 @@
+/* LearnSphere Design System
+   Modern, professional eLearning platform with educational trust colors
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+    /* Core backgrounds */
+    --background: 210 20% 98%;
+    --foreground: 222 47% 11%;
+
+    /* Card surfaces */
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    /* Popover surfaces */
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* Primary - Deep Blue (Trust, Education) */
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 217 91% 50%;
+    --primary-muted: 217 91% 95%;
+
+    /* Secondary - Slate for neutral UI */
+    --secondary: 215 20% 95%;
+    --secondary-foreground: 222 47% 11%;
+
+    /* Success - Emerald Green (Progress, Achievement) */
+    --success: 160 84% 39%;
+    --success-foreground: 0 0% 100%;
+    --success-muted: 160 84% 95%;
+
+    /* Warning - Amber (Attention, Badges) */
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --warning-muted: 38 92% 95%;
+
+    /* Destructive - Red */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Muted surfaces */
+    --muted: 215 20% 95%;
+    --muted-foreground: 215 16% 47%;
+
+    /* Accent - Indigo for highlights */
+    --accent: 239 84% 67%;
+    --accent-foreground: 0 0% 100%;
+    --accent-muted: 239 84% 95%;
+
+    /* UI elements */
+    --border: 215 20% 88%;
+    --input: 215 20% 88%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.75rem;
+
+    /* Sidebar */
+    --sidebar-background: 222 47% 11%;
+    --sidebar-foreground: 215 20% 95%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 222 47% 18%;
+    --sidebar-accent-foreground: 215 20% 95%;
+    --sidebar-border: 222 47% 20%;
+    --sidebar-ring: 217 91% 60%;
+
+    /* Custom gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(239 84% 67%) 100%);
+    --gradient-success: linear-gradient(135deg, hsl(160 84% 39%) 0%, hsl(160 84% 50%) 100%);
+    --gradient-warning: linear-gradient(135deg, hsl(38 92% 50%) 0%, hsl(25 95% 53%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(222 47% 11%) 0%, hsl(217 91% 20%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(215 20% 98%) 100%);
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(222 47% 11% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(222 47% 11% / 0.1), 0 2px 4px -2px hsl(222 47% 11% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(222 47% 11% / 0.1), 0 4px 6px -4px hsl(222 47% 11% / 0.1);
+    --shadow-xl: 0 20px 25px -5px hsl(222 47% 11% / 0.1), 0 8px 10px -6px hsl(222 47% 11% / 0.1);
+    --shadow-glow: 0 0 20px hsl(217 91% 60% / 0.3);
+
+    /* Badge colors */
+    --badge-newbie: 160 84% 39%;
+    --badge-explorer: 217 91% 60%;
+    --badge-achiever: 38 92% 50%;
+    --badge-specialist: 280 84% 60%;
+    --badge-expert: 160 84% 39%;
+    --badge-master: 38 92% 50%;
+  }
+
+  .dark {
+    --background: 222 47% 6%;
+    --foreground: 215 20% 95%;
+
+    --card: 222 47% 9%;
+    --card-foreground: 215 20% 95%;
+
+    --popover: 222 47% 9%;
+    --popover-foreground: 215 20% 95%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 217 91% 70%;
+    --primary-muted: 217 91% 15%;
+
+    --secondary: 222 47% 15%;
+    --secondary-foreground: 215 20% 95%;
+
+    --success: 160 84% 45%;
+    --success-foreground: 0 0% 100%;
+    --success-muted: 160 84% 15%;
+
+    --warning: 38 92% 55%;
+    --warning-foreground: 0 0% 100%;
+    --warning-muted: 38 92% 15%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --muted: 222 47% 15%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 239 84% 67%;
+    --accent-foreground: 0 0% 100%;
+    --accent-muted: 239 84% 15%;
+
+    --border: 222 47% 20%;
+    --input: 222 47% 20%;
+    --ring: 217 91% 60%;
+
+    --sidebar-background: 222 47% 4%;
+    --sidebar-foreground: 215 20% 95%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 222 47% 12%;
+    --sidebar-accent-foreground: 215 20% 95%;
+    --sidebar-border: 222 47% 15%;
+    --sidebar-ring: 217 91% 60%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(222 47% 4%) 0%, hsl(222 47% 11%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(222 47% 9%) 0%, hsl(222 47% 7%) 100%);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer utilities {
+
+  /* Gradient text */
+  .text-gradient-primary {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Glass effect */
+  .glass {
+    @apply bg-white/80 backdrop-blur-lg border border-white/20;
+  }
+
+  .glass-dark {
+    @apply bg-black/40 backdrop-blur-lg border border-white/10;
+  }
+
+  /* Smooth shadows */
+  .shadow-soft {
+    box-shadow: var(--shadow-md);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  /* Card hover effect */
+  .card-hover {
+    @apply transition-all duration-300;
+  }
+
+  .card-hover:hover {
+    @apply -translate-y-1;
+    box-shadow: var(--shadow-lg);
+  }
+
+  /* Progress bar animation */
+  .progress-animate {
+    @apply transition-all duration-500 ease-out;
+  }
+
+  /* Kanban column styling */
+  .kanban-column {
+    @apply bg-muted/50 rounded-xl p-4 min-h-[400px];
+  }
+
+  /* Lesson type icons */
+  .lesson-video {
+    @apply text-primary;
+  }
+
+  .lesson-document {
+    @apply text-warning;
+  }
+
+  .lesson-image {
+    @apply text-accent;
+  }
+
+  .lesson-quiz {
+    @apply text-success;
+  }
+
+  /* Badge animations */
+  .badge-glow {
+    animation: badge-pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes badge-pulse {
+
+    0%,
+    100% {
+      box-shadow: 0 0 0 0 hsl(var(--warning) / 0.4);
+    }
+
+    50% {
+      box-shadow: 0 0 0 8px hsl(var(--warning) / 0);
+    }
+  }
+
+  /* Sidebar active indicator */
+  .sidebar-active {
+    @apply relative;
+  }
+
+  .sidebar-active::before {
+    content: '';
+    @apply absolute left-0 top-1/2 -translate-y-1/2 w-1 h-6 bg-primary rounded-r-full;
+  }
+}
+
+/* Custom scrollbar */
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--muted-foreground) / 0.3) transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--muted-foreground) / 0.3);
+    border-radius: 3px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(var(--muted-foreground) / 0.5);
+  }
+}
