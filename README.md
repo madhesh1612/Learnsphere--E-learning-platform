@@ -1,73 +1,261 @@
-# Welcome to your Lovable project
+##📘 LearnSphere — eLearning LMS Platform
 
-## Project info
+A full-stack role-based Learning Management System (LMS) built for hackathon demonstration.
+LearnSphere enables instructors to create courses and learners to enroll, learn, and track progress with quizzes, points, and reviews.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+##🚀 Project Overview
 
-## How can I edit this code?
+LearnSphere is a responsive eLearning platform with two major sides:
 
-There are several ways of editing your application.
+##👨‍💼 Instructor/Admin (Backoffice)
 
-**Use Lovable**
+Create and manage courses
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Add lessons and quizzes
 
-Changes made via Lovable will be committed automatically to this repo.
+Publish courses
 
-**Use your preferred IDE**
+Track learner progress
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Manage enrollments
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+##🎓 Learner (Frontend)
 
-Follow these steps:
+Browse courses
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Enroll and learn
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Attempt quizzes
 
-# Step 3: Install the necessary dependencies.
-npm i
+Track progress
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Earn points & badges
+
+Give ratings and reviews
+
+This project demonstrates a real-world LMS workflow:
+
+Course Creation → Publish → Enrollment → Learning → Quiz → Completion → Reviews → Reporting
+
+##🧩 Core Features
+✅ Authentication
+
+Supabase email/password login
+
+Forgot password flow
+
+Session persistence
+
+##👨‍💼 Admin Features
+
+Manage courses
+
+Publish/unpublish courses
+
+Invite learners
+
+View platform data
+
+Monitor course usage
+
+##👨‍🏫 Instructor Features
+
+Create courses
+
+Add lessons (Video/Document/Image/Quiz)
+
+Edit/Delete lessons
+
+Build quizzes
+
+View enrolled learners
+
+##🎓 Learner Features
+
+Browse published courses
+
+Enroll in courses
+
+Lesson viewer
+
+Quiz attempts
+
+Progress tracking
+
+Ratings & reviews
+
+##📝 Quiz System
+
+Multiple choice questions
+
+Score calculation
+
+Attempt tracking
+
+Points system
+
+##📊 Progress Tracking
+
+Lesson completion tracking
+
+Course completion %
+
+Enrollment records
+
+##⭐ Ratings & Reviews
+
+Star rating system
+
+Course feedback
+
+Average rating display
+
+##🏆 Gamification
+
+Points from quizzes
+
+Badge levels:
+
+Newbie
+
+Explorer
+
+Achiever
+
+Specialist
+
+Expert
+
+Master
+
+##🛠 Tech Stack
+Frontend
+
+React.js
+
+TypeScript
+
+Tailwind CSS
+
+React Router
+
+Backend / BaaS
+
+Supabase
+
+Authentication
+
+Database
+
+Storage
+
+##🗄 Database Design (Supabase)
+
+Main Tables:
+
+profiles
+
+courses
+
+lessons
+
+quizzes
+
+questions
+
+enrollments
+
+reviews
+
+lesson_progress
+
+quiz_attempts
+
+points
+
+##🔄 Application Flow
+Instructor Flow
+
+Login
+
+Create Course
+
+Add Lessons & Quizzes
+
+Publish Course
+
+Learner Flow
+
+Signup/Login
+
+Browse Courses
+
+Enroll
+
+Learn Lessons
+
+Attempt Quiz
+
+Earn Points
+
+Review Course
+
+##⚙️ Setup Instructions
+1️⃣ Clone Repo
+git clone <repo-url>
+cd learnsphere
+
+2️⃣ Install Dependencies
+npm install
+
+3️⃣ Setup Environment Variables
+
+Create .env file:
+
+VITE_SUPABASE_URL=your_url
+VITE_SUPABASE_ANON_KEY=your_key
+
+##4️⃣ Run Project
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+##🔐 Role Access
+Role	Access
+Admin	Full control
+Instructor	Manage courses
+Learner	Learn & enroll
+##🎯 Hackathon Focus
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+This project focuses on:
 
-**Use GitHub Codespaces**
+Real LMS logic
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Role-based access
 
-## What technologies are used for this project?
+Dynamic Supabase data
 
-This project is built with:
+Clean UI/UX
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Practical workflows
 
-## How can I deploy this project?
+##📌 Future Improvements
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Payment integration
 
-## Can I connect a custom domain to my Lovable project?
+Certificates
 
-Yes, you can!
+Live classes
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Advanced analytics
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Notifications
+
+AI recommendations
+
+##🤝 Contributors
+
+Developer: Muthu Madhesh
+Hackathon Team: The Innovators
+
+📜 License
+
+This project is built for educational and hackathon purposes.
